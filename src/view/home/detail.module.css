@@ -1,0 +1,79 @@
+.button {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: inherit;
+  padding: 0;
+}
+p,
+h6,
+h5,
+h4,
+h3,
+h2,
+h1 {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  display: flex;
+
+  justify-content: center;
+  /* background-color: aqua; */
+}
+.title {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 30%;
+  /* background-color: aquamarine; */
+}
+.card {
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 15px;
+  width: 270px;
+}
+.cardTitle {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+.cardItem {
+  display: flex;
+  width: 80px;
+  border: 1px solid gray;
+  justify-content: space-between;
+  border-radius: 10px;
+  align-items: center;
+}
+.cardBtnItem {
+  background-color: transparent;
+  border: 0px;
+}
+.cardPrice {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.cardBtn {
+  width: 100%;
+  padding: 7px;
+  border-radius: 7px;
+  background-color: white;
+  border: 1.5px solid green;
+  margin-top: 20px;
+}
+.cardMenu {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 0;
+}
+.cardItemMenu {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+}
