@@ -76,15 +76,11 @@ export default function Home() {
                   style={{ textAlign: "start" }}
                   onClick={() => handleClick(i)}
                 >
-                  <img
-                    className={style.imgCard}
-                    src={i.img}
-                    alt="Card image cap"
-                  />
+                  <img className={style.imgCard} src={i.img} alt="error" />
                   <div className="card-body" style={{ margin: 9 }}>
                     <h6 className={style.hidden}> {i.name}</h6>
                     <h5 className="card-title">{i.harga}</h5>
-                    <div style={{paddingTop:13}}>
+                    <div style={{ paddingTop: 13 }}>
                       <i
                         className="bi bi-geo-alt-fill"
                         style={{ color: "blue" }}

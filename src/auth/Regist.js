@@ -32,16 +32,16 @@ export default function Regist() {
 
     if (account.email === "") {
       alert("Please Input Your email!!!");
-      seterrors({...errors,email:"Please Input Your email!!!"});
+      seterrors({ ...errors, email: "Please Input Your email!!!" });
     } else if (account.password === "") {
       alert("Please Input Your password!!!");
-      seterrors({...errors,password:"Please Input Your email!!!"});
+      seterrors({ ...errors, password: "Please Input Your email!!!" });
     } else if (account.name === "") {
       alert("Please Input Your Name!!!");
-      seterrors({...errors,name:"Please Input Your email!!!"});
+      seterrors({ ...errors, name: "Please Input Your email!!!" });
     } else if (account.contact === "") {
       alert("Please Input Your Phone!!!");
-      seterrors({...errors,contact:"Please Input Your email!!!"});
+      seterrors({ ...errors, contact: "Please Input Your email!!!" });
     } else {
       await localStorage.setItem("simpanAccount", JSON.stringify(account));
       console.log(account);
@@ -95,7 +95,9 @@ export default function Regist() {
                 className="form-control"
                 placeholder="randisimp@gmail.com"
               />
-              {errors.email && <div style={{ color: "red" }}>{errors.email}</div>}
+              {errors.email && (
+                <div style={{ color: "red" }}>{errors.email}</div>
+              )}
             </div>
 
             <div className={styles.formGroup}>
@@ -108,7 +110,9 @@ export default function Regist() {
                 className="form-control"
                 placeholder="Password"
               />
-              {errors.password && <div style={{ color: "red" }}>{errors.password}</div>}
+              {errors.password && (
+                <div style={{ color: "red" }}>{errors.password}</div>
+              )}
             </div>
 
             <div className={styles.formGroup}>
@@ -136,10 +140,12 @@ export default function Regist() {
                 className="form-control"
                 placeholder="0812xxxx"
               />
-              {errors.contact && <div style={{ color: "red" }}>{errors.contact}</div>}
+              {errors.contact && (
+                <div style={{ color: "red" }}>{errors.contact}</div>
+              )}
             </div>
 
-            <div className="form-check">
+            {/* <div className="form-check">
               <input
                 className="form-check-input"
                 type="checkbox"
@@ -149,9 +155,9 @@ export default function Regist() {
               <label className="form-check-label" for="flexCheckDefault">
                 <p className={styles.label}> remember me</p>
               </label>
-            </div>
+            </div> */}
             <button
-              style={{ width: "100%" }}
+              style={{ width: "100%", marginTop: 20 }}
               type="submit"
               className="btn btn-primary"
             >

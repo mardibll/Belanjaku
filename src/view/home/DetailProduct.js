@@ -1,9 +1,7 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import styles from "./detail.module.css";
-export default function DetailProduct(props) {
-  console.log("ini data props", props);
-
+export default function DetailProduct() {
   const jumlah = 1;
   const total = 120;
   const color = "Grey";
@@ -13,7 +11,7 @@ export default function DetailProduct(props) {
   return (
     <div className={styles.container}>
       <div>
-        <img src={product.img} style={{ height: 300, width: 300 }} alt='dm'/>
+        <img src={product.img} style={{ height: 300, width: 300 }} alt="dm" />
         {/* <div style={{ display: "flex", justifyContent: "space-between" }}>
           {product.lainnya.map((item, index) => {
             console.log(item);
@@ -48,7 +46,11 @@ export default function DetailProduct(props) {
       <div className={styles.card}>
         <h5>Atur Jumlah dan Catatan</h5>
         <div className={styles.cardTitle}>
-          <img src={product.img} style={{ height: 70, width: 70 }} />
+          <img
+            src={product.img}
+            style={{ height: 70, width: 70 }}
+            alt="error"
+          />
           <p style={{ paddingLeft: 10 }}> Navy, 43</p>
         </div>
         <hr />
