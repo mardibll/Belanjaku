@@ -1,1 +1,0 @@
-![img 1] (src/assets/DisainOtp.png)
